@@ -1,0 +1,22 @@
+[
+        {
+            "name":"Annette"
+            ,"age": 27
+            ,"address":{
+                "street":"Orhuwhorun Road"
+                ,"city":"Effurun"
+                ,"state": "Delta State"
+            },
+            "children":["David","Gift","Lizzy"]
+            },
+            {
+            "name":"Irene"
+            ,"age": 27
+            ,"address":{
+                "street":"Ubulu Road"
+                ,"city":"Aba"
+                ,"state": "Abia State"
+            },
+            "children":["Layefa","Unborn"]
+        }
+]
