@@ -12,8 +12,9 @@
     <hr/>
     
     <p> The data below were obtain using Json</p>
-    <ul id="personList" class="nav">
-    </ul>    
+    <div id="personList">
+    </div> 
+    <aside class="text-danger"> Please note that I make use of xampp as my server</aside>
 </div>
     
     <script type="text/javascript" src="js/jquery.js"></script>
@@ -28,7 +29,7 @@
             if(this.readyState==4 && this.status==200){
                 person = JSON.parse(xhttp.responseText);
                 for(var i=0; i<person.length; i++){
-                 output += "<li><a href=''>" + person[i].name + "</a></li>";
+                 output += "<p class='text-success'>" + person[i].name + " is an indigene of "+ person[i].address.state+" with "+ person[i].children.length +" child/children. "+ person[i].name +" is "+ person[i].age +" years old</p>";
                 }          
             personList.innerHTML = output;
             }
